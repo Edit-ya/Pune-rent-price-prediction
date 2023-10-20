@@ -1,0 +1,23 @@
+def get_address_names():
+    return _address
+
+def get_furnishing_names():
+    return _furnishing
+
+def get_available_for_names():
+   return _available_for
+
+def get_facing_names(): 
+     return _facing 
+
+def get_data_columns():
+    return __data_columns
+
+
+if __name__ == '__main__':
+    load_saved_artifacts()
+    print(get_address_names())
+    print(get_furnishing_names())
+    print(get_available_for_names())
+    print(get_facing_names())
+    print(get_estimated_rent('Baner', 2, 1050.00, 0, 'Semifurnished', 'Bachelors (Men Only)','North', 2.00))

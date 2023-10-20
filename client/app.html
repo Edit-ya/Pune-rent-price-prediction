@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pune Home Rent Prediction</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+ <header>
+    <h1 class="scrolling-text">Pune Home Rent Prediction</h1>
+</header>
+
+
+<div class="img"></div>
+<form class="form">
+	<h2>Area (Square Feet)</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+	<h2>BHK</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">4</label>
+		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		<label for="radio-bhk-5">5</label>
+	</div>
+	</form>
+<form class="form">
+	<h2>Parking</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bath-1" name="uiParking" value="1"/>
+		<label for="radio-bath-1">1</label>
+		<input type="radio" id="radio-bath-2" name="uiParking" value="2" checked/>
+		<label for="radio-bath-2">2</label>
+		<input type="radio" id="radio-bath-3" name="uiParking" value="3"/>
+		<label for="radio-bath-3">3</label>
+		<input type="radio" id="radio-bath-4" name="uiParking" value="4"/>
+		<label for="radio-bath-4">4</label>
+
+	</div>
+		
+	<div>
+	    <h2>Available</h2>
+  <select class="Available" name="" id="uiAvailable">
+    <option value="" disabled="disabled" selected="selected">Available for</option>
+		<option>all</option>
+        <option>family only</option>
+        <option>bachelors (men only)</option>
+        <option>bachelors (men/women)</option>
+        <option>bachelors (women only)</option>
+        
+  </select>	
+  	</div>
+  	
+<div>
+  <h2>Furnishing</h2>
+  <select class="Furnishing" name="" id="uiFurnishing">
+    <option value="" disabled="disabled" selected="selected">Furnishing</option>
+    <option>furnished</option>
+    <option>semifurnished</option>
+    <option>unfurnished</option>
+  </select>
+</div>
+
+<div>
+  <h2>Facing</h2>
+  <select class="Facing" name="" id="uiFacing">
+    <option value="" disabled="disabled" selected="selected">Facing direction</option>
+    <option>east</option>
+    <option>north</option>
+    <option>north-east</option>
+    <option>north-west</option>
+    <option>south</option>
+    <option>south-east</option>
+    <option>south-west</option>
+    <option>west</option>
+  </select>
+</div>
+
+<div>
+  <h2>Property-age</h2>
+  <select class="Property-age" name="" id="uiPropertyage">
+    <option value="" disabled="disabled" selected="selected">Property-age</option>
+    <option>0 to 1 Year Old</option>
+    <option>1 to 5 Year Old</option>
+    <option>5 to 10 Year Old</option>
+    <option>10+ Year Old</option>
+  </select>
+</div>                    
+   	
+		<h2>Location</h2>
+	<div>
+  <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>

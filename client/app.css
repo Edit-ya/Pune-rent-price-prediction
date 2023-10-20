@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+/* Style radio buttons within the switch-field */
+.switch-field input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+/* Style labels for radio buttons */
+.switch-field label {
+  background-color: #e4e4e4;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  padding: 8px 16px;
+  margin-right: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+/* Style for labels on hover */
+.switch-field label:hover {
+  background-color: #dcd686;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Style for labels when selected */
+.switch-field input[type="radio"]:checked + label {
+  background-color: #a5dc86;
+  box-shadow: none;
+}
+
+.form {
+    max-width: 270px;
+	font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+
+	font-weight: normal;
+	line-height: 1.625;
+	margin: 8px auto;
+	padding-left: 16px;
+	z-index: 2;
+}
+
+.form input {
+    /* Change the font family, style, or other properties for input text here */
+    font-family: Arial, sans-serif;
+    
+    /* Add any other input text styling you desire */
+}
+
+h2 {
+	font-size: 18px;
+	margin-bottom: 8px;
+    margin-top: 2px;
+}
+.area {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 76%;
+  border: 0;
+  margin: 0 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 10px;
+  color: #333; /* Change text color */
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
+}
+
+.area:hover {
+  background: #e6e6e6; /* Change background color on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+.area:focus {
+  background: #fff; /* Change background color when focused */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a more prominent shadow when focused */
+}
+
+
+/* Common styles for all form elements */
+.Available, .Furnishing, .Facing, .Property-age, .location {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 76%;
+  border: 0;
+  margin: 0 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #333; /* Change text color */
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
+}
+
+/* Hover effect */
+.Available:hover, .Furnishing:hover, .Facing:hover, .Property-age:hover, .location:hover {
+  background: #e6e6e6; /* Change background color on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+/* Focus effect */
+.Available:focus, .Furnishing:focus, .Facing:focus, .Property-age:focus, .location:focus {
+  background: #fff; /* Change background color when focused */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a more prominent shadow when focused */
+}
+
+.submit{
+  background: #a5dc86;
+  width: 76%;
+  border: 0;
+  margin: 25px 0 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+	height: 35px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.result {
+    background: linear-gradient(7deg, #8c8a6e, #dcd686);
+    width: 76%;
+    border: 0px;
+    margin: 15px 0 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    color: #333; /* Text color */
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+
+.img {
+  background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+	background-repeat: no-repeat;
+  background-size: auto;
+  background-size:100% 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(15px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body, html {
+  height: 100%;
+}
+
+.submit {
+    color: aliceblue;
+    background-color: #5b5b8d;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 2px solid aliceblue;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s; /* Add a smooth transition for all properties */
+}
+
+/* Styles for the normal state */
+.submit {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add the hover effect */
+.submit:hover {
+    background-color: #445689;
+    color: #fff; /* Change the text color on hover */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); /* Adjust text shadow on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add a box shadow on hover */
+}
+
+
+
+h1 {
+    padding-left: 550px;
+}
