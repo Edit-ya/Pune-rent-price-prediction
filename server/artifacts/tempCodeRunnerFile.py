@@ -1,1 +1,0 @@
-'Semifurnished', 'Bachelors (Men Only)','North', 2.00
